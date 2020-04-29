@@ -1,0 +1,48 @@
+<div class="cont">
+  <h2>Aggiungi libro</h2>
+  <div class="form">
+    <div>
+      <label>
+        ISBN
+      </label>
+      <input id="isbn" type="text" [(ngModel)]="bookToBeAdded.ISBN" >
+    </div>
+  
+    <div>
+      <label>
+        Titolo
+      </label>
+      <input id="titolo" type="text" [(ngModel)]="bookToBeAdded.title">
+    </div>
+
+    <div>
+      <label>
+        Autore
+      </label>
+      <input id="autore" type="text" [(ngModel)]="bookToBeAdded.author">
+    </div>
+
+    <div>
+      <label>
+        Editore
+      </label>
+      <input id="editore" type="text" [(ngModel)]="bookToBeAdded.publisher">
+    </div>
+
+    <div>
+      <label>
+        Data pubblicazione
+      </label>
+      <input id="dataPubb" type="text" [(ngModel)]="bookToBeAdded.publicationDate">
+    </div>
+
+    <div>
+      <label>
+        Copertina
+      </label>
+      <input id="copertina" type="text" [(ngModel)]="bookToBeAdded.coverUrl">
+    </div>
+ 
+    <button (click)="onBookSubmit()">Aggiungi libro</button>
+  </div>
+</div>
