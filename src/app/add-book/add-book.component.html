@@ -1,48 +1,38 @@
 <div class="cont">
   <h2>Aggiungi libro</h2>
   <div class="form">
-    <div>
-      <label>
-        ISBN
-      </label>
-      <input id="isbn" type="text" [(ngModel)]="bookToBeAdded.ISBN" >
+    <div class="row">
+      <div class="col">
+        <label>ISBN</label>
+        <input type="text" class="form-control" [(ngModel)]="bookToBeAdded.ISBN">
+      </div>
+      <div class="col">
+        <label>Titolo</label>
+        <input type="text" class="form-control" [(ngModel)]="bookToBeAdded.title">
+      </div>
     </div>
-  
-    <div>
-      <label>
-        Titolo
-      </label>
-      <input id="titolo" type="text" [(ngModel)]="bookToBeAdded.title">
+    <div class="row">
+      <div class="col">
+        <label>Autore</label>
+        <input type="text" class="form-control" [(ngModel)]="bookToBeAdded.author">
+      </div>
+      <div class="col">
+        <label>Editore</label>
+        <input type="text" class="form-control" [(ngModel)]="bookToBeAdded.publisher">
+      </div>
     </div>
-
-    <div>
-      <label>
-        Autore
-      </label>
-      <input id="autore" type="text" [(ngModel)]="bookToBeAdded.author">
+    <div class="row">
+      <div class="col">
+        <label>Data pubblicazione</label>
+        <input type="text" class="form-control" [(ngModel)]="bookToBeAdded.publicationDate">
+      </div>
+      <div class="col">
+        <label>Copertina</label>
+        <input type="text" class="form-control" [(ngModel)]="bookToBeAdded.coverUrl">
+      </div>
     </div>
-
-    <div>
-      <label>
-        Editore
-      </label>
-      <input id="editore" type="text" [(ngModel)]="bookToBeAdded.publisher">
+    <div class="div-btn">
+      <button type="button" (click)="onBookSubmit()" class="btn">Aggiungi</button>
     </div>
-
-    <div>
-      <label>
-        Data pubblicazione
-      </label>
-      <input id="dataPubb" type="text" [(ngModel)]="bookToBeAdded.publicationDate">
-    </div>
-
-    <div>
-      <label>
-        Copertina
-      </label>
-      <input id="copertina" type="text" [(ngModel)]="bookToBeAdded.coverUrl">
-    </div>
- 
-    <button (click)="onBookSubmit()">Aggiungi libro</button>
   </div>
 </div>

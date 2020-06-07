@@ -1,7 +1,43 @@
 <div class="cont" *ngIf="service.selectedBook">
-    <h2>Modifica libro</h2>
-    <div class="form">
-      <div>
+  <h2>Modifica libro</h2>
+  <div class="form">
+    <div class="row">
+      <div class="col">
+        <label>ISBN</label>
+        <input type="text" class="form-control" [(ngModel)]="service.selectedBook.ISBN">
+      </div>
+      <div class="col">
+        <label>Titolo</label>
+        <input type="text" class="form-control" [(ngModel)]="service.selectedBook.title">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label>Autore</label>
+        <input type="text" class="form-control" [(ngModel)]="service.selectedBook.author">
+      </div>
+      <div class="col">
+        <label>Editore</label>
+        <input type="text" class="form-control" [(ngModel)]="service.selectedBook.publisher">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label>Data pubblicazione</label>
+        <input type="text" class="form-control" [(ngModel)]="service.selectedBook.publicationDate">
+      </div>
+      <div class="col">
+        <label>Copertina</label>
+        <input type="text" class="form-control" [(ngModel)]="service.selectedBook.coverUrl">
+      </div>
+    </div>
+    <div class="div-btn">
+      <button type="button" (click)="onBookSave()" class="btn">Modifica</button>
+    </div>
+  </div>
+
+
+      <!-- <div>
         <label>
           ISBN
         </label>
@@ -41,9 +77,8 @@
           Copertina
         </label>
         <input id="copertina" type="text" [(ngModel)]="service.selectedBook.coverUrl">
-      </div>
+      </div> -->
   
-      <button (click)="onBookSave()">Modifica libro</button>
+      <!-- <button (click)="onBookSave()">Modifica libro</button> -->
     
-    </div>
 </div>

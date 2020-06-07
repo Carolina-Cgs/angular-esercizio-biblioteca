@@ -29,6 +29,14 @@ export class AddBookComponent implements OnInit {
 
   onBookSubmit() {
     this.bookService.addBook(this.bookToBeAdded);
+    this.bookToBeAdded = {
+      ISBN: '',
+      title: '',
+      author: '',
+      publisher:'',
+      publicationDate:'',
+      coverUrl:'',
+    }
   }
 
 }

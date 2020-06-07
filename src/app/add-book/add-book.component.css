@@ -1,11 +1,26 @@
 .cont{background-color: ivory; width: 1024px; margin: 0 auto; padding:10px}
 
-h2 {padding: 10px 30px; border-bottom: double;}
+h2{padding: 10px 30px;
+    padding-left: 80px;
+    border-bottom: double;
+    font-variant: small-caps;}
 
-.form{width: 600px; margin: 20px 20px;}
+.form {background-color: wheat;
+    margin: 0px 22px;
+    padding: 0 20px;
+    border-radius: 4px;}
 
-.form div{padding: 10px; background-color: wheat; display: inline-grid;}
+label{margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 8px;}
 
-label{text-align: center;}
+.div-btn{text-align: center;
+    padding: 14px;}
 
-button{margin: 10px;}
+.btn{color: #000000;
+    border-color: #000000;
+    padding: 8px 80px;}
+
+.btn:hover{color: #f5deb3;
+    background-color: #42382a;
+    border-color: #42382a}

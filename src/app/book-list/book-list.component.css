@@ -1,6 +1,9 @@
-h2 {padding: 10px 30px; border-bottom: double; margin-bottom: 0;}
+.cont{background-color: ivory; width: 1024px; margin: 0 auto; padding:10px; padding-bottom: 26px;}
 
-.cont{background-color: ivory; width: 1024px; margin: 0 auto; padding:10px}
+h2 {padding: 10px 30px;
+    padding-left: 80px;
+    border-bottom: double;
+    font-variant: small-caps;}
 
 .card{max-width: 540px; margin: 0 18px 6px 18px;}
 
